@@ -5,7 +5,7 @@ const compteSchema = new mongoose.Schema({
     email: String,
     password: String
 });
-const Compte = mongoose.model('User', compteSchema);
+const Compte = mongoose.model('Compte', compteSchema);
 
 module.exports = Compte
 

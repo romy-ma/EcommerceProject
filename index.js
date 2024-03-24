@@ -12,18 +12,18 @@ const compteRoutes = require('./routes/compteroutes')
 const app = express();
 app.use(express.json());
 // Connexion à la base de données MongoDB avec Mongoose
-mongoose.connect('mongodb://localhost:27017/auth_demo');
+mongoose.connect('mongodb://127.0.0.1:27017/auth_demo');
 const db = mongoose.connection;
 
 
 app.use('/auth', authRoutes)
 app.use('/pro', proRoutes)
 
-app.use('/cart',cartRoutes)
+app.use('/cart', cartRoutes)
 
-app.use('/order',orderRoutes)
+app.use('/order', orderRoutes)
 
-app.use('/compte',compteRoutes)
+app.use('/compte', compteRoutes)
 
 
 // Démarrage du serveur
