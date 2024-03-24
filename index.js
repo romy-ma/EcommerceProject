@@ -3,7 +3,7 @@ const express = require('express');
 const authRoutes = require('./routes/authroutes')
 const mongoose = require('mongoose');
 const proRoutes = require('./routes/proroutes')
-const cartRoutes = require('./routes/cartroutes')
+
 
 // Configuration de l'application Express
 const app = express();
@@ -15,6 +15,7 @@ const db = mongoose.connection;
 
 app.use('/auth', authRoutes)
 app.use('/pro', proRoutes)
+
 app.use('/cart',cartRoutes)
 
 

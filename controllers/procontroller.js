@@ -16,7 +16,7 @@ exports.authenticateToken = (req, res, next) => {
     });
 }
 
-//2eme arg avec l ajout
+
 exports.add =async (req, res) => {
     try {
         const { name, description, price, image } = req.body;
