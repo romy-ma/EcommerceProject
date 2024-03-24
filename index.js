@@ -4,6 +4,7 @@ const authRoutes = require('./routes/authroutes')
 const mongoose = require('mongoose');
 const proRoutes = require('./routes/proroutes')
 
+
 // Configuration de l'application Express
 const app = express();
 app.use(express.json());
@@ -14,6 +15,9 @@ const db = mongoose.connection;
 
 app.use('/auth', authRoutes)
 app.use('/pro', proRoutes)
+
+app.use('/cart',cartRoutes)
+
 
 
 // Démarrage du serveur

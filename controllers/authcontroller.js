@@ -15,7 +15,7 @@ exports.signup = async (req, res) => {
     } catch (error) {
       res.status(500).json({ error: 'Erreur lors de l\'inscription' });
     }
-  }
+}
 
   //||||||| second method ||||||||
   exports.login =  async (req, res) => {
