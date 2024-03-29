@@ -16,10 +16,13 @@ exports.authenticateToken = (req, res, next) => {
 
     jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
         if (err) return res.sendStatus(403);
-        req.user = user;
+        req.user = user;// on met les info dans req.user
         next();
     });
 }
+// err, user) => { ... } : C'est une fonction de rappel qui sera appelée une 
+//fois que la vérification du jeton sera terminée. Si une erreur se produit pendant
+// la vérification, err contiendra l'erreur, sinon user contiendra les données utilisateur extraites du jeton JWT.
 
 
 

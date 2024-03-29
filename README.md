@@ -73,3 +73,8 @@ Some potential improvements for the e-commerce project include:
 ## Conclusion
 
 The e-commerce project provides a foundation for building a fully functional online shopping platform. By leveraging Express.js, JWT authentication, and MongoDB, the project offers essential features for users to browse, purchase, and manage products with ease. With further enhancements and optimizations, the project can scale to meet the needs of a growing e-commerce business.
+
+
+lolo
+//echo \"Error: no test specified\" && exit 1
+  //},
